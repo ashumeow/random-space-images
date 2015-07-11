@@ -1,32 +1,32 @@
 import urllib
 import os
 
-def fetchImages(start, stop):
-    counter = 0
-    imgIndex = start
+def meowFetchImages(start, stop):
+    meowInit = 0
+    helloMeow = start
     for i in range(start, start+stop+1):
-        urllib.urlretrieve(""+str(imgIndex)+".jpg", str(imgIndex)+".jpg")
-        print("Image# "+str(counter)+" of "+str(stop)+" captured.")
-        counter += 1
-        imgIndex += 1
-    print("Finished")
+        urllib.urlretrieve("http://geekresearchlab.net/space/hubble/"+str(helloMeow)+".jpg", str(helloMeow)+".jpg")
+        print("Image# "+str(meowInit)+" of "+str(stop)+" fetched.")
+        meowInit += 1
+        helloMeow += 1
+    print("Woo hoo! Finished")
 
-def pathFolder():
-    cur_folder = os.getcwd()
-    if not os.path.exists(cur_folder+"/space/hubble/"):
+def meowPath():
+    meowCurrent = os.getcwd()
+    if not os.path.exists(meowCurrent+"/space/hubble/"):
          print("Wait.. Folder not found!\n")
          print("Creating a new folder...\n")
-         os.makedirs(cur_folder+"/space/hubble/")
-         os.chdir(cur_folder+"/space/hubble/")
+         os.makedirs(meowCurrent+"/space/hubble/")
+         os.chdir(meowCurrent+"/space/hubble/")
     else:
-         os.chdir(cur_folder+"/space/hubble/")
+         os.chdir(meowCurrent+"/space/hubble/")
 
-def main():
+def meow():
     print("Random Images Capture from Hubble Telescope\n")
     start = raw_input("Pick a random number?:\n")
     stop  = raw_input("How many images do you want to download?: ")
     print("Capturing images...\n")
-    pathFolder()
-    fetchImages(int(start), int(stop))
+    meowPath()
+    meowFetchImages(int(start), int(stop))
 
-main()
+meow()
