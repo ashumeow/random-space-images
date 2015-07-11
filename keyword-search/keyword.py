@@ -1,12 +1,13 @@
 import urllib
 import os
+import urlparse
 
 def meowFetchImages(start, stop):
-    meowInit = {
-    "hubble",
-    "nebulla",
-    "galaxy"
-    }
+    meowInit = (
+        'hubble',
+        'nebula',
+        'galaxy'
+    )
     helloMeow = start
     for i in range(start, start+stop+1):
         urllib.urlretrieve("http://geekresearchlab.net/space/keyword/"+str(helloMeow)+".jpg", str(helloMeow)+".jpg")
