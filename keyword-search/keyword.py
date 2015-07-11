@@ -1,18 +1,10 @@
 import urllib
 import os
-import urlparse
 
-def meowFetchImages(start, stop):
-    meowInit = (
-        'hubble',
-        'nebula',
-        'galaxy'
-    )
+def meowFetch(start):
     helloMeow = start
-    for i in range(start, start+stop+1):
-        urllib.urlretrieve("http://geekresearchlab.net/space/keyword/"+str(helloMeow)+".jpg", str(helloMeow)+".jpg")
-        print("Image "+str(meowInit)+" fetched.")
-    print("Woo hoo! Finished")
+    urllib.urlretrieve("http://geekresearchlab.net/space/keyword/"+str(helloMeow)+".jpg")
+    print ("Image fetched")
 
 def meowPath():
     meowCurrent = os.getcwd()
@@ -25,11 +17,11 @@ def meowPath():
          os.chdir(meowCurrent+"/space/keyword/")
 
 def meow():
-    print("Keyword-based image capture\n")
-    start = raw_input("Current available keywords are: 'hubble','galaxy','nebula'\n Enter a keyword for the right random image to be captured?:\n")
-    stop = raw_input("Type 1 to begin: \n")
+    print("Keyword-based Images Capture\n")
+    start = raw_input("Available keywords: 'hubble','nebula','galaxy'\n")
+    print("Type any one of the available keywords: \n")
     print("Capturing images...\n")
+    meowFetch(int(start))
     meowPath()
-    meowFetchImages(int(start), int(stop))
 
 meow()
