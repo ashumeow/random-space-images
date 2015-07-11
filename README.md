@@ -1,4 +1,4 @@
-# random-space-images
+# Space images search-engine
 Capturing, Retrieving and Automatically saving various random beautiful space/astronomy images from a database server using Python 2.7.10
 ```
 Different types of search mechanism:
