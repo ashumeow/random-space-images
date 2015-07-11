@@ -5,7 +5,7 @@ Different types of search mechanism:
 
 1. Random search [working]
 2. Keyword-based search [not-working at present]
-
+```
 ***
 For picking random numbers, choose from 0 to 7. <br>
 Currently, only 8 images are in the database. <br>
