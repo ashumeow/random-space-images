@@ -3,7 +3,7 @@ import os
 
 def meowFetch(start):
     helloMeow = start
-    urllib.urlretrieve("http://geekresearchlab.net/space/keyword/"+str(helloMeow)+".jpg")
+    urllib.urlretrieve("http://geekresearchlab.net/space/keyword/"+helloMeow+".jpg")
     print ("Image fetched")
 
 def meowPath():
