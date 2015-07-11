@@ -2,9 +2,9 @@
 Capturing, Retrieving and Automatically saving various random beautiful space/astronomy images from a database server using Python 2.7.10
 
 ***
-For picking random numbers, choose from 0 to 4. <br>
+For picking random numbers, choose from 0 to 7. <br>
 Currently, only 5 images are in the database. <br>
-Download image numbers start from 0. So it's 0 to 4 images at present. <br>
+Download image numbers start from 0. So it's 0 to 7 images at present. <br>
 Programmers/Developers love including 0, right? lol <br>
 Loading more images are in-progress. <br>
 Sooner, I am aiming to load more than 1000 images if possible, not just from Hubble.
@@ -16,7 +16,8 @@ I used Python 2.7.10 [Latest]. This works for any Python 2.7+
 Note: Oh! Turn on your internet connection while trying it.
 ```
 <b>Release:</b>
-There will be a release soon. For now, there is a pre-release.
+There will be a release sooner with good enhancements. <br>
+For now, this is a pre-release.
 ***
 <b>Contributions:</b><br>
 If interested to send more space images along with it's name and telescope used for capturing and year... <br>
