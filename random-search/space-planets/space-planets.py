@@ -5,7 +5,7 @@ def meowFetchImages(start, stop):
     meowInit = 0
     helloMeow = start
     for i in range(start, start+stop+1):
-        urllib.urlretrieve(""+str(helloMeow)+".jpg", str(helloMeow)+".jpg")
+        urllib.urlretrieve("http://geekresearchlab.net/space/space-planets/"+str(helloMeow)+".jpg", str(helloMeow)+".jpg")
         print("Image# "+str(meowInit)+" of "+str(stop)+" fetched.")
         meowInit += 1
         helloMeow += 1

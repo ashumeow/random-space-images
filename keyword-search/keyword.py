@@ -21,7 +21,7 @@ def meow():
     start = raw_input("Available keywords: 'hubble','nebula','galaxy'\n")
     print("Type any one of the available keywords: \n")
     print("Capturing images...\n")
-    meowFetch((helloMeow))
+    meowFetch('')
     meowPath()
 
 meow()
