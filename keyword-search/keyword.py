@@ -2,13 +2,14 @@ import urllib
 import os
 
 def meowFetch():
-    # available keywords
-    helloMeow = ['hubble','nebula','galaxy']
-    # target url
-    meow_url="http://geekresearchlab.net/space/keyword/"+str(helloMeow)+".jpg"
-    # URL fetch/retrieve
-    meowCatch=urllib.urlretrieve(meow_url)
-    print ("Image fetched")
+    for start in helloMeow:
+        # available keywords
+        helloMeow = ['hubble','nebula','galaxy']
+        # target url
+        meow_url="http://geekresearchlab.net/space/keyword/"+str(helloMeow)+".jpg"
+        # URL fetch/retrieve
+        meowCatch=urllib.urlretrieve(meow_url)
+        print ("Image fetched")
 
 def meowPath():
     # path locator
