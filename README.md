@@ -5,11 +5,11 @@ Different types of search mechanism:
 
 1. Random search [working]
 2. Keyword-based search [not-working at present]
-
+```
 ***
-For picking random numbers, choose from 0 to 7. <br>
+For picking random numbers, choose from 0 to 14. <br>
 Currently, only 8 images are in the database. <br>
-Download image numbers start from 0. So it's 0 to 7 images at present. <br>
+Download image numbers start from 0. So it's 0 to 14 images at present. <br>
 Programmers/Developers love including 0, right? lol <br>
 Loading more images are in-progress. <br>
 Sooner, I am aiming to load more than 1000 images if possible, not just from Hubble.
