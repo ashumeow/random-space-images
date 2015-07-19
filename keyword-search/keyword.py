@@ -1,14 +1,15 @@
 import urllib
 import os
 import urllib2
+import json
 
 def meowFetch():
     # available keywords
-    helloMeow = [
-    'hubble',
-    'nebula',
-    'galaxy'
-    ]
+    helloMeow = {
+    hubble: 'hubble',
+    nebula: 'nebula',
+    galaxy: 'galaxy'
+    }
     # target url
     meow_url=("http://geekresearchlab.net/space/keyword/"+str(helloMeow)+".jpg".format(helloMeow))
     # URL fetch/retrieve
