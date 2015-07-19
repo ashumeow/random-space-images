@@ -2,20 +2,18 @@ import urllib
 import os
 
 def meowFetch():
-    if start in helloMeow:
-        # available keywords
-        helloMeow = [
-        'hubble',
-        'nebula',
-        'galaxy'
-        ]
-        # target url
-        meow_url="http://geekresearchlab.net/space/keyword/"+str(helloMeow)+".jpg"
-        # URL fetch/retrieve
-        meowCatch=urllib.urlretrieve(meow_url)
-        print("Image fetched")
-    else:
-        print("Error")
+    # available keywords
+    helloMeow = [
+    'hubble',
+    'nebula',
+    'galaxy'
+    ]
+    # target url
+    meow_url="http://geekresearchlab.net/space/keyword/"+str(helloMeow)+".jpg"
+    # URL fetch/retrieve
+    meowCatch=urllib.urlretrieve(meow_url)
+    return meowCatch
+    print("Image fetched")
 
 def meowPath():
     # path locator
@@ -31,7 +29,7 @@ def meowPath():
 def meow():
     # main execution area
     print("Keyword-based Images Capture\n")
-    start = raw_input("Available keywords: 'hubble','nebula','galaxy'\n")
+    helloMeow = raw_input("Available keywords: 'hubble','nebula','galaxy'\n")
     print("Type any one of the available keywords: \n")
     print("Capturing images...\n")
     meowPath()
