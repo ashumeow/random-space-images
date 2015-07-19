@@ -21,7 +21,7 @@ Programmers/Developers love including 0, right? lol
 Loading more images are in-progress. 
 Sooner, I am aiming to load more than 1000 images if possible, not just from Hubble.
 
-Run space-planets.py sing Git or Python interpreter or anything that runs Python.
+Run space-planets.py using Git or Python interpreter or anything that runs Python.
 This was tested Python 2.7.10 [Latest]
 Note: Oh! Turn on your internet connection while trying it.
 For picking random numbers, choose from 0 to 1.
