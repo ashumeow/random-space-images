@@ -13,17 +13,21 @@ def meowFetch():
     meow_url=("http://geekresearchlab.net/space/keyword/"+str(helloMeow)+".jpg".format(helloMeow))
     # URL fetch/retrieve
     meowCatch=urllib.urlretrieve(meow_url).read()
-    print("Image fetched")
+    # looping
+    for helloMeow in meow_url.read():
+        print("Image fetched")
 
 def meowPath():
     # path locator
     meowCurrent = os.getcwd()
+    # if path doesn't exists
     if not os.path.exists(meowCurrent+"/space/keyword/"):
          print("Wait.. Folder not found!\n")
          print("Creating a new folder...\n")
          os.makedirs(meowCurrent+"/space/keyword/")
          os.chdir(meowCurrent+"/space/keyword/")
     else:
+        # if path exists
          os.chdir(meowCurrent+"/space/keyword/")
 
 def meow():
