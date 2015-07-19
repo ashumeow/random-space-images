@@ -1,5 +1,6 @@
 import urllib
 import os
+import urllib2
 
 def meowFetch():
     # available keywords
@@ -9,7 +10,7 @@ def meowFetch():
     'galaxy'
     ]
     # target url
-    meow_url="http://geekresearchlab.net/space/keyword/"+str(helloMeow)+".jpg"
+    meow_url=("http://geekresearchlab.net/space/keyword/"+str(helloMeow)+".jpg".format(helloMeow))
     # URL fetch/retrieve
     meowCatch=urllib.urlretrieve(meow_url)
     return meowCatch
