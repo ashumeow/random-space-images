@@ -12,9 +12,9 @@ def meowFetch():
     # target url
     meow_url=("http://geekresearchlab.net/space/keyword/"+str(helloMeow)+".jpg".format(helloMeow))
     # URL fetch/retrieve
-    meowCatch=urllib.urlretrieve(meow_url).read()
+    meowCatch=urllib.urlretrieve(meow_url)
     # looping
-    for helloMeow in meow_url.read():
+    for meow_url in meowCatch.read():
         print("Image fetched")
 
 def meowPath():
