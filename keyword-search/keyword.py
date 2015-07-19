@@ -33,5 +33,5 @@ def meow():
     print("Type any one of the available keywords: \n")
     print("Capturing images...\n")
     meowPath()
-    meowFetch()
+    meowFetch(int(helloMeow))
 meow()
