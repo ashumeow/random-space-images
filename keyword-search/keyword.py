@@ -4,7 +4,11 @@ import os
 def meowFetch():
     if start in helloMeow:
         # available keywords
-        helloMeow = ['hubble','nebula','galaxy']
+        helloMeow = [
+        'hubble',
+        'nebula',
+        'galaxy'
+        ]
         # target url
         meow_url="http://geekresearchlab.net/space/keyword/"+str(helloMeow)+".jpg"
         # URL fetch/retrieve
