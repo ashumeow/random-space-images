@@ -10,8 +10,10 @@ def meowFetch():
     nebula: 'nebula',
     galaxy: 'galaxy'
     }
-    # target url
-    meow_url=("http://geekresearchlab.net/space/keyword/"+str(helloMeow)+".jpg".format(helloMeow))
+    # defining url
+    ig="http://geekresearchlab.net/space/keyword/"
+    # target
+    meow_url=(ig+str(helloMeow)+".jpg".format(helloMeow))
     # URL fetch/retrieve
     meowCatch=urllib.urlretrieve(meow_url)
     # looping
