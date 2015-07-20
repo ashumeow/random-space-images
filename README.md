@@ -1,5 +1,5 @@
 # Space images search-engine
-Capturing, Retrieving and Automatically saving various random beautiful space/astronomy images from a database server using Python 2.7.10
+Retrieving Images and Automatically saving various random beautiful space/astronomy images from a database server using Python 2.7.10
 ```
 Different types of search mechanism:
 
@@ -15,13 +15,13 @@ Run hubble.py using Git or Python interpreter or anything that runs Python.
 This was tested Python 2.7.10 [Latest]
 Note: Oh! Turn on your internet connection while trying it.
 For picking random numbers, choose from 0 to 14. 
-Currently, only 14 images are in the database.
-Download image numbers start from 0. So it's 0 to 14 images at present.
+Currently, only 17 images are in the database.
+Download image numbers start from 0. So it's 0 to 16 images at present.
 Programmers/Developers love including 0, right? lol
 Loading more images are in-progress. 
 Sooner, I am aiming to load more than 1000 images if possible, not just from Hubble.
 
-Run space-planets.py sing Git or Python interpreter or anything that runs Python.
+Run space-planets.py using Git or Python interpreter or anything that runs Python.
 This was tested Python 2.7.10 [Latest]
 Note: Oh! Turn on your internet connection while trying it.
 For picking random numbers, choose from 0 to 1.
