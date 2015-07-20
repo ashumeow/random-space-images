@@ -5,11 +5,17 @@ import json
 
 def meowFetch():
     # available keywords
-    helloMeow = {
-    hubble: 'hubble',
-    nebula: 'nebula',
-    galaxy: 'galaxy'
-    }
+    helloMeow = '''{
+    [
+    'hubble': 'hubble'
+    ],
+    [
+    'nebula': 'nebula'
+    ],
+    [
+    'galaxy': 'galaxy'
+    ]
+    }'''
     # defining url
     ig="http://geekresearchlab.net/space/keyword/"
     # target
